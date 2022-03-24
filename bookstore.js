@@ -22,7 +22,7 @@ function myFunction() {
     } 
   }
 }
-  let books = [
+let books = [
     {
         "title": "Things Fall Apart",
         "author": "Chinua Achebe",
@@ -179,7 +179,27 @@ function myFunction() {
        },
     ]
 
-    function populatetablewitharray(myTable) {
+
+    var html = '<table>';
+     html += '<tr>';
+
+     for (var j in books[0]) {
+         html += '<th>' + j + '</th>';
+     }
+     html += '<th colspan="2">Actions</th>'
+     html += '</tr>';
+     for (var i = 0; i < books.length; i++) {
+         html += '<tr>';
+         for (var j in books[i]) {
+
+             html += '<td>' + books[i][j] + '</td>';
+         }
+        html += '<td><a href="#">edit</td><td> | <a href="#">delete</td></tr>';
+     }
+     html += '</table>';
+     document.getElementById('divRecords').innerHTML = html;
+
+    /*function populatetablewitharray(myTable) {
       // get the table to add rows to
 
       // cycle through the array for each of the presidents
@@ -243,4 +263,4 @@ function myFunction() {
             maxIDNum = book.id;
           }
         }
-    }
+    } */

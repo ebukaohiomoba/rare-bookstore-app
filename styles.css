@@ -206,3 +206,15 @@ li {
     height: auto;
     width: 100%;
   }
+
+  .bookstore-header{
+      padding-top: 150px;
+      padding-bottom: 50px;
+  }
+  .bookstore-heading{
+      font-size: 70px;
+  }
+  .table-functions{
+      margin-top:-100px;
+      margin-bottom: 0;
+  }

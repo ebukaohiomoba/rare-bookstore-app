@@ -1,10 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-
+html { 
+    background: url(images/wave-haikei-4.svg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vw;
+    margin: 0;
+  }
+  body {
+    height: 100vw;
+    margin: 0;
+}
 h1{
     font-family: 'Noto Serif', serif;
     font-size: 50px;
     text-align: center;
 }
+.home-main-text{
+    font-family: 'Noto Serif', serif;
+    font-size: 70px;
+    text-align: center;
+}
+
 h2{
     font-family: 'Noto Serif', serif;
     font-size: 40px;
@@ -16,6 +39,13 @@ p{
     font-size: 20px;
 }
 
+  
+  .logo {
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
+  }
 
 input{
     margin: 0 auto;
@@ -25,20 +55,8 @@ input{
     border-radius: 18px;
     width: 300x;
 }
-.child{
-    flex: 1;
-    text-align: center;
-    background-color: #1A1E41;
-    flex-direction: column;
-    color: white;
-    width: 700px;
-    border-radius: 10px;
-    padding: 30px 50px;
-    box-shadow: 0 10px 25px #311C43;
-    margin-bottom: 20px;
-    font-size: 20px;
-    flex-wrap: wrap;
-}
+
+
 button {
     margin: 0 auto;
     display: block;
@@ -47,14 +65,68 @@ button {
     text-align: center;
 
 }
-body {
-    margin-top: 0;
-    background: #F3E5D0;
-    padding-top: 5px;
+
+img{
+    width: 1600px;
+    height: 1100px;
+}
+.main-container{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.child-container{
+    background-color: white;
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    position: relative;
 
 }
-.login{
-    background-image: url(/images/wave-haikei-2.svg);
+.picture-container{
+    margin-top: -300px;
+    display:block;
+}
+.main-text{
+    display: block;
+    margin-top: -70px;
+    width: 1200px;
+    border: black solid;
+    display: inline-block;
+
+}
+.home-main-text{
+    font-size: 75px;
+    justify-content: center;
+}
+.text-box{
+    width: 40%;
+    max-width: 60%;
+    border: black solid;
+}
+.home-sub-text{
+    font-size: 50px;
+    justify-content: center;
+}
+.btn-signin{
+    background-color: rgb(1, 170, 228);
+    min-width: 100%;
+    height: 4rem;
+    line-height: 2.7;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: initial;
+    white-space: nowrap;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 20px;
+    padding: 0px 1.8rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
 }
 .login-main-container{
     background: #F3E5D0;
@@ -80,5 +152,34 @@ table {
 
   .table-functions{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
   }
+
+  #navigation-container {
+    position: relative;
+    background-color: #352d2f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 5px 15px;
+    opacity: 0.7;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

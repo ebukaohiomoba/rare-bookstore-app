@@ -1,4 +1,5 @@
-var submitLogin = (e) => {
+function doLogin () {
+  var submitLogin = (e) => {
     debugger;
     console.log("submitLogin e: ", e);
   
@@ -35,3 +36,5 @@ var submitLogin = (e) => {
       loginErr.className = "errorMessage";
     }
   };
+}
+

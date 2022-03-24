@@ -8,17 +8,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Rare Books</title>
 </head>
 <body >
+    <header>
+    <div class="navigation-bar">
+    <div class="navigation-container">
+    <img src="images/R-3.png" class="logo">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bookstore.html">Books</a></li>
+        <li><a href="employees.html">Employees</a></li>
+      </ul>
+    </div>
+    </div>
+     </body>
+    </header>
     <div class = "main-container">
-        <h1>Welcome to Rare Books</h1>
-
+        <div class = "child-container">
+        <div class = "text-box">
+        <h1 class="home-main-text">Welcome to Rare Books</h1>
+        <h2 class="home-sub-text">Please log in below</h2>
+        <button class="btn-signin" onclick="doLogIn()">Sign In</button>
         </div>
-
+        <div class="picture-container">
+            <img src="images/shutterstock_1414508999-2.png">
         </div>
     </div>
-    
 </body>
 </html>

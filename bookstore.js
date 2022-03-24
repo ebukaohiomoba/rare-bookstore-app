@@ -192,7 +192,7 @@ let books = [
         var row = document.createElement('tr');
     
         // properties of the array elements
-        var properties = ['title', 'author', 'genre','country','language','length','year','isbn','condition','add','delete'];
+        let properties = ['title', 'author', 'genre','country','language','length','year','isbn','condition','add','delete'];
     
         // append each one of them to the row in question, in order
         for (var j = 0; j < properties.length; ++j) {
@@ -210,7 +210,7 @@ let books = [
           console.log(books.properties);
           if(book.properties=='add'){
             row.appendChild(addButton);
-          } else if(books.properties=='delete'){
+          } else if(book.properties=='delete'){
             row.appendChild(delButton);
           }
         }

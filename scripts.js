@@ -1,23 +1,14 @@
 function doLogin () {
-  var submitLogin = (e) => {
-    debugger;
-    console.log("submitLogin e: ", e);
-  
-    setLoginError("");
-    let tbUserName = document.getElementById("userName");
-    let tbPassword = document.getElementById("password");
+    let tbUserName = document.getElementById("username").value;
+    let tbPassword = document.getElementById("password").value;
     console.log(tbUserName, tbPassword);
-    let loginResult = doFormLogin(tbUserName.value, tbPassword.value);
-    if (loginResult.ok) {
-      e.preventDefault();
-      window.location.href = "index.html";
+    if (tbUserName=='admin@admin.com'&& tbPassword=='123456') {
+      window.location.replace("/index.html")
     } else {
-      setLoginError(loginResult.message, true);
-      e.preventDefault();
-    }
-  };
-  
-  var doFormLogin = (userName, password) => {
+      return "Wrong Password";
+  }
+}
+  /*var doFormLogin = (userName, password) => {
     let result = { ok: false, message: "Incorrect username and/or password" };
   
     if (login(userName, password)) {
@@ -35,6 +26,6 @@ function doLogin () {
     if (show) {
       loginErr.className = "errorMessage";
     }
-  };
-}
+  
+}*/
 

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <script src="scripts.js" defer></script>
     <title>Log In</title>
   </head>
   <body>
@@ -20,13 +20,13 @@
     <div class="signupcontainer">
     <form id="sign-in-form">
       <label for="email"><b><p>Email</p></b></label>
-        <input type="email" size= 40 placeholder="Please enter your email here" name="email"  id="username" required>
+        <input type="email" size= 40 placeholder="Please enter your email here" name="username"  id="username" required>
         <label for="password"><b><p>Password</p></b></label>
-        <input type="password" size = 20 maxlength= "7" placeholder="Enter Password" id= "password" name="password" required>
+        <input type="password" placeholder="" id= "password" name="password" required>
         <br>
-        <button class="btn-signin" type="submit" onclick="accountValidation()">Login</button>
+        <input class="btn-common" type="reset" value="Sign In" onclick="doLogin();"></input>
         <br>
-        <button class="btn-signin" type="submit" onclick="forgotPasswordAlert()">Forgot Password</button>
+        <button class="btn-common" type="submit" onclick="forgotPasswordAlert()">Forgot Password</button>
 
     </form>
   </div>

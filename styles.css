@@ -40,12 +40,7 @@ p{
 }
 
   
-  .logo {
-    width: 200px;
-    height: 200px;
-    top: 0;
-    left: 0;
-  }
+  
 
 input{
     margin: 0 auto;
@@ -84,6 +79,7 @@ img{
     flex-direction: row;
     border-radius: 30px;
     position: relative;
+    flex: 0 0 auto;
 
 }
 .picture-container{
@@ -91,11 +87,8 @@ img{
     display:block;
 }
 .main-text{
-    display: block;
-    margin-top: -70px;
+    margin-top: -60px;
     width: 1200px;
-    border: black solid;
-    display: inline-block;
 
 }
 .home-main-text{
@@ -105,7 +98,6 @@ img{
 .text-box{
     width: 40%;
     max-width: 60%;
-    border: black solid;
 }
 .home-sub-text{
     font-size: 50px;
@@ -155,31 +147,4 @@ table {
       flex-direction: column;
   }
 
-  #navigation-container {
-    position: relative;
-    background-color: #352d2f;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    padding: 5px 15px;
-    opacity: 0.7;
-}
-
-li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+ 

@@ -156,8 +156,8 @@ let books = [
         "condition": "Poor"
        },
        {
-        "title": "Lolita",
-        "author": "Vladimir Nabokov",
+        "title": "Heart of Darkness",
+        "author": "Seymour Apples",
         "genre": "PsychologicalFiction",
         "country": "Russia\/United States",
         "language": "English",

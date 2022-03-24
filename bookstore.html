@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
-        <title>Rare Bookstore Employee Page</title>  
-        <link rel="stylesheet" href="styles.css">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+      <script src="bookstore.js" defer></script>
+      <title>BookStore</title>
       </head>
 <body>
     <header>
-    <h1>Manage books here:</h1>
+    <h1>Books</h1>
+    <nav>  
+      <ul class="container">  
+        <li>Home</li>  
+        <li>Books</li>  
+         <li>Employees</li>  
+      </ul>  
+    </nav>
     </header>
+    <div class="table-functions">
     <button type="submit">Create New Book</button>
-    <table>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+    </div>
+    <table id="myTable">
     <tr>
-      <th>Book Cover</th>
       <th>Title</th>
       <th>Author</th>
-      <th>Year</th>
-      <th>Edition</th>
-      <th>Condition</th>
       <th>Genre</th>
+      <th>Country</th>
+      <th>Language</th>
+      <th>Length</th>
+      <th>Year</th>
+      <th>ISBN</th>
+      <th>Condition</th>
     </tr>
     <tr>
-      <td>cover.jpg</td>
-      <td>How Europe Underdeveloped Africa</td>
-      <td>Walter Rodney</td>
-      <td>1960</td>
-      <td>1st Edition</td>
-      <td>Great</td>
-      <td>History</td>
+      
     </tr>
   </table>
       

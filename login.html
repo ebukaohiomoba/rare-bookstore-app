@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
     <script src="script.js"></script>
-    <title>Rare Bookstore Log In</title>
+    <title>Log In</title>
   </head>
   <body>
-    <div class="main-container">
+    <div class="login">
+      <div class="signupcontainer">
     <header>
     <h1>Log In</h1>
     <h2>Please enter your email and password to Log In</h2>
     </header>
     <form action="submit">
-      <div class="signupcontainer">
         <label for="email"><b><p>Email</p></b></label>
         <input type="email" size= 50 placeholder="Please enter your email here" name="email"  id="username" required>
         <label for="password"><b><p>Password</p></b></label>
@@ -24,11 +27,11 @@
         <button type="submit" onclick="accountValidation()">Login</button>
         <br>
         <button type="submit" onclick="forgotPasswordAlert()">Forgot Password</button>
-      </div>
+
     </form>
-    </div>
-    <footer>
-        <p>Created by Chukwuebuka Ohiomoba Designs <a href="mailto:crohiomoba@gmail.com">Click here to send us an email to report any bugs</a></p>
-    </footer>
+  </div>
+
+  </div>
+
   </body>
 </html>

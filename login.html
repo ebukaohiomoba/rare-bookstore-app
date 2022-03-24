@@ -8,25 +8,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Log In</title>
   </head>
   <body>
     <div class="login">
-      <div class="signupcontainer">
     <header>
-    <h1>Log In</h1>
-    <h2>Please enter your email and password to Log In</h2>
+    <h1 class= "login-text">Log In</h1>
+    <h2>Please enter your email and password</h2>
     </header>
+    <div class="signupcontainer">
     <form id="sign-in-form">
       <label for="email"><b><p>Email</p></b></label>
         <input type="email" size= 40 placeholder="Please enter your email here" name="email"  id="username" required>
         <label for="password"><b><p>Password</p></b></label>
         <input type="password" size = 20 maxlength= "7" placeholder="Enter Password" id= "password" name="password" required>
         <br>
-        <button type="submit" onclick="accountValidation()">Login</button>
+        <button class="btn-signin" type="submit" onclick="accountValidation()">Login</button>
         <br>
-        <button type="submit" onclick="forgotPasswordAlert()">Forgot Password</button>
+        <button class="btn-signin" type="submit" onclick="forgotPasswordAlert()">Forgot Password</button>
 
     </form>
   </div>

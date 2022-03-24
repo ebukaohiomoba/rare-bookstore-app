@@ -180,26 +180,7 @@ let books = [
     ]
 
 
-    var html = '<table>';
-     html += '<tr>';
-
-     for (var j in books[0]) {
-         html += '<th>' + j + '</th>';
-     }
-     html += '<th colspan="2">Actions</th>'
-     html += '</tr>';
-     for (var i = 0; i < books.length; i++) {
-         html += '<tr>';
-         for (var j in books[i]) {
-
-             html += '<td>' + books[i][j] + '</td>';
-         }
-        html += '<td><a href="#">edit</td><td> | <a href="#">delete</td></tr>';
-     }
-     html += '</table>';
-     document.getElementById('divRecords').innerHTML = html;
-
-    /*function populatetablewitharray(myTable) {
+    function populatetablewitharray(myTable) {
       // get the table to add rows to
 
       // cycle through the array for each of the presidents
@@ -211,19 +192,27 @@ let books = [
         var row = document.createElement('tr');
     
         // properties of the array elements
-        var properties = ['title', 'author', 'genre','country','language','length','year','isbn','condition'];
+        var properties = ['title', 'author', 'genre','country','language','length','year','isbn','condition','add','delete'];
     
         // append each one of them to the row in question, in order
         for (var j = 0; j < properties.length; ++j) {
-          // create new data cell for names
-          var cell = document.createElement('td');
-    
+          // create new data cell for books
+          let cell = document.createElement('td');
+          let addButton = document.createElement("button");
+          let delButton = document.createElement("button");
+          addButton.textContent="Add";
+          delButton.textContent="Del"
           // set name of property using bracket notation (properties[j] is a string,
           // which can be used to access properties of president)
           cell.innerHTML = book[properties[j]];
-    
           // add to end of the row
           row.appendChild(cell);
+          console.log(books.properties);
+          if(book.properties=='add'){
+            row.appendChild(addButton);
+          } else if(books.properties=='delete'){
+            row.appendChild(delButton);
+          }
         }
     
         // add new row to table
@@ -263,4 +252,29 @@ let books = [
             maxIDNum = book.id;
           }
         }
-    } */
+    } 
+
+    var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+let btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

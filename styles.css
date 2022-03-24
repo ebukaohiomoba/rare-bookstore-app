@@ -122,6 +122,23 @@ img{
     border-radius: 0.8rem;
     text-decoration: none;
 }
+.btn-common{
+        background-color: rgb(1, 170, 228);
+        height: 4rem;
+        line-height: 2.7;
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-align: center;
+        text-transform: initial;
+        white-space: nowrap;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 20px;
+        padding: 0px 1.8rem;
+        border-radius: 0.8rem;
+        text-decoration: none;
+    
+}
 .login-main-container{
     background: #F3E5D0;
 
@@ -217,4 +234,57 @@ li {
   .table-functions{
       margin-top:-100px;
       margin-bottom: 0;
+  }
+  .login{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 50px;
+      height: 90vh;
+  }
+  .login-text{
+      text-align: center;
+      font-size: 60px;
+  }
+  p, input{
+      margin-top: 20px;
+      }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
   }

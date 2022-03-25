@@ -33,6 +33,7 @@ let books = [
         "year": "1958",
         "isbn": "978-7-1735-1972-0",
         "condition": "Fair"
+        
        },
        {
         "title": "Fairy tales",
@@ -189,39 +190,53 @@ let books = [
         let book = books[i];
     
         // create a row element to append cells to
-        var row = document.createElement('tr');
-    
+        let row = document.createElement('tr');
+        let addButton = document.createElement('button');
+        let delButton = document.createElement('button');
+
         // properties of the array elements
         let properties = ['title', 'author', 'genre','country','language','length','year','isbn','condition','add','delete'];
     
         // append each one of them to the row in question, in order
         for (var j = 0; j < properties.length; ++j) {
           // create new data cell for books
-          let cell = document.createElement('td');
-          let addButton = document.createElement("button");
-          let delButton = document.createElement("button");
+         
           addButton.textContent="Add";
-          delButton.textContent="Del"
+          delButton.textContent="Del";
+          
+          addButton.classList.add('.table-add-btn');
+          delButton.classList.add('.table-del-btn')
+
+
+       let tablecell = document.createElement('td');
+       console.log(tablecell);
+       
           // set name of property using bracket notation (properties[j] is a string,
           // which can be used to access properties of president)
-          cell.innerHTML = book[properties[j]];
+          let bookvalues = book[properties[j]];
+          tablecell.innerText = bookvalues;
           // add to end of the row
-          row.appendChild(cell);
-          console.log(books.properties);
-          if(book.properties=='add'){
-            row.appendChild(addButton);
-          } else if(book.properties=='delete'){
-            row.appendChild(delButton);
+          if(properties[j]=='add'){
+            tablecell.appendChild(addButton);
+          } else if(properties[j]=='delete'){
+            tablecell.appendChild(delButton);
           }
+          console.log(row.appendChild(tablecell));
+          
         }
-    
         // add new row to table
-        table.appendChild(row);
-      }
+        console.log(table.appendChild(row));
+      
+    
+      
     }
+  
+}
     populatetablewitharray(books);
 
-    
+
+
+
     var addBook = (e) => {
         //get the list of books from local storage
         let bookList = getBookList();

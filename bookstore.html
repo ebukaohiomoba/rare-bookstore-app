@@ -32,15 +32,7 @@
       </div>
     </header>
     <div class="table-functions">
-    <!-- Trigger/Open The Modal -->
-<button class="btn-common" id="myBtn">Create New Book</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
+ 
     <form class="modal-content" onsubmit="updateBook(event);">
       <div class="container">
           <h1>Update the Book</h1>
@@ -49,13 +41,21 @@
           <input type="hidden" name="hfBookID" id="hfBookID">
 
           <label for="title"><b>Title</b></label>
-          <input type="text" placeholder="Enter Book Title" name="title" id="tbUpTitle" required>
+          <input type="text" placeholder="Enter Book Title" name="title" id="title" required>
+          <input type="text" placeholder="author" name="author" id="author" required>
+          <input type="text" placeholder="author" name="country" id="country" required>
+          <input type="text" placeholder="author" name="length" id="language" required>
+          <input type="number" placeholder="author" name="length" id="length" required>
+          <input type="text" placeholder="author" name="author" id="author" required>
+          <input type="number" placeholder="year" name="author" id="year" required>
+          <input type="text" placeholder="isbn" name="author" id="isbn" required>
+          <input type="text" placeholder="condition" name="author" id="condition" required>
 
           <label for="author"><b>Author</b></label>
           <input type="text" placeholder="Enter Author's Name" name="author" id="tbUpAuthor" required>
 
           <div><label for="ddlUpGenre"><b>Choose a Genre</b></label>
-              <select name="genre" id="ddlUpGenre">
+              <select name="genre" id="genre">
                   <option value="Economics">Economics</option>
                   <option value="History">History</option>
                   <option value="Math">Math</option>
@@ -65,39 +65,48 @@
 
           <label for="publisher"><b>Publisher</b></label>
           <input type="text" placeholder="Enter Publisher" name="publisher" id="tbUpPublisher" required>
-
-          <label for="length"><b>Length</b></label>
-          <input type="number" placeholder="Enter Length" name="length" id="tbUpLength" required>
-
-          <div class="clearfix">
-              <!--close the modal when the cancel button is clicked-->
-              <button type="button" onclick="document.getElementById('mdlFormUpdate').style.display='none'"
-                  class="cancelbtn">Cancel</button>
-              <button type="submit" class="btn-signin">Update</button>
-          </div>
-      </div>
+          <button id="my-button" onclick="addRow()"  value="Add">Add</button>
   </form>
   </div>
 
 </div>
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by Title">
-    </div>
-    <table id="myTable">
-    <tr>
-      <th>Title</th>
-      <th>Author</th>
-      <th>Genre</th>
-      <th>Country</th>
-      <th>Language</th>
-      <th>Length</th>
-      <th>Year</th>
-      <th>ISBN</th>
-      <th>Condition</th>
-      <th>Add</th>
-      <th>Delete</th>
-    </tr>
+    <input type="text" id="myInput" onkeyup="searchBooks()" placeholder="Search by Title">
+</div>
+<div id="table-container">
+  
+  <div id="table">
+    <table id="my-table">
+       <thead> 
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Country</th>
+            <th>Language</th>
+            <th>Length</th>
+            <th>Year</th>
+            <th>ISBN</th>
+            <th>Condition</th>
+            <th></th>
+
+
+
+
+        </tr> 
+        </thead>
+        <tbody id="my-body">
     
-  </table>
+         </tbody>
+         </table>
+ 
+
+
+
+
+
+
+</div>  
+    
       
 </body>
 </html>

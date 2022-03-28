@@ -200,7 +200,7 @@ let books = [
     .getElementsByTagName("tbody")[0];
   
   function addRow() {
-    if (!valditade()) {
+    if (!validate()) {
       const title = document.getElementById("title").value;
       const author = document.getElementById("author").value;
       const genre = document.getElementById("genre").value;
@@ -226,7 +226,7 @@ let books = [
   
       books.push(newBook);
   
-      valditade();
+      validate();
   
       analyzebooks(books);
     }
@@ -326,7 +326,7 @@ let books = [
   });
   
   //This function makes sure that the user has enterted all the required information.
-  function valditade() {
+  function validate() {
     var isEmpty = false;
     const title = document.getElementById("title").value;
     const author = document.getElementById("author").value;

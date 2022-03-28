@@ -202,6 +202,7 @@ let books = [
   function addRow() {
     if (!validate()) {
       const title = document.getElementById("title").value;
+      console.log(title);
       const author = document.getElementById("author").value;
       const genre = document.getElementById("genre").value;
       const country = document.getElementById("country").value;
@@ -293,14 +294,14 @@ let books = [
     for (var i = 0; i < books.length; i++) {
       if (i === rIndex - 1) {
         books[i].name = title;
-        books[i].lastName = author;
-        books[i].email = genre;
-        books[i].phone = country;
-        books[i].name = language;
-        books[i].lastName = length;
-        books[i].email = year;
-        books[i].phone = isbn;
-        books[i].phone = condition;
+        books[i].author = author;
+        books[i].genre = genre;
+        books[i].country = country;
+        books[i].language = language;
+        books[i].length = length;
+        books[i].year = year;
+        books[i].isbn = isbn;
+        books[i].condition = condition;
 
       }
     }
@@ -352,6 +353,18 @@ let books = [
       isEmpty = true;
     } else if (language === "") {
       alert("Please provide the language");
+      isEmpty = true;
+    }else if (length === "") {
+      alert("Please provide the length");
+      isEmpty = true;
+    } else if (year === "") {
+      alert("Please provide the year");
+      isEmpty = true;
+    } else if (isbn === "") {
+      alert("Please provide the isbn");
+      isEmpty = true;
+    } else if (condition === "") {
+      alert("Please provide the condition");
       isEmpty = true;
     }
     return isEmpty;

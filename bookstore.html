@@ -38,27 +38,23 @@
           <h1>Update the Book</h1>
           <p>Please fill in this form to update the book.</p>
           <hr>
-          <label for="title"><b>Title</b></label>
           <input type="text" placeholder="Enter Book Title" name="title" id="title" required>
           <input type="text" placeholder="author" name="author" id="author" required>
-          <input type="text" placeholder="author" name="country" id="country" required>
-          <input type="text" placeholder="author" name="length" id="language" required>
+          <input type="text" placeholder="genre" name="genre" id="genre" required>
+          <input type="text" placeholder="country" name="country" id="country" required>
+          <input type="text" placeholder="language" name="length" id="language" required>
           <input type="number" placeholder="author" name="length" id="length" required>
           <input type="text" placeholder="author" name="author" id="author" required>
-          <input type="number" placeholder="year" name="author" id="year" required>
-          <input type="text" placeholder="isbn" name="author" id="isbn" required>
-          <input type="text" placeholder="condition" name="author" id="condition" required>
-          <div><label for="ddlUpGenre"><b>Choose a Genre</b></label>
-              <select name="genre" id="genre">
-                  <option value="Economics">Economics</option>
-                  <option value="History">History</option>
-                  <option value="Math">Math</option>
-                  <option value="Science">Science</option>
+          <input type="number" placeholder="year" name="year" id="year" required>
+          <input type="text" placeholder="isbn" name="isbn" id="isbn" required>
+              <select name="genre" id="condition" style="font-size: 20px; text-align: center;">
+                  <option value="Abysmal">Abysmal</option>
+                  <option value="Poor">Poor</option>
+                  <option value="Fair">Fair</option>
+                  <option value="Good">Good</option>
+                  <option value="Great">Great</option>
               </select>
           </div>
-
-          <label for="publisher"><b>Publisher</b></label>
-          <input type="text" placeholder="Enter Publisher" name="publisher" id="tbUpPublisher" required>
           <button id="my-button" onclick="addRow()"  value="Add">Add</button>
           <button id="btnSave">Save</button>
 

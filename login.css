@@ -1,0 +1,38 @@
+.btn-signin{
+    background-color: rgb(1, 170, 228);
+    min-width: 100%;
+    height: 4rem;
+    line-height: 2.7;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: initial;
+    white-space: nowrap;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 20px;
+    padding: 0px 1.8rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
+}
+.btn-common{
+        background-color: rgb(1, 170, 228);
+        height: 4rem;
+        line-height: 2.7;
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-align: center;
+        text-transform: initial;
+        white-space: nowrap;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 20px;
+        padding: 0px 1.8rem;
+        border-radius: 0.8rem;
+        text-decoration: none;
+    
+}
+.login-main-container{
+    background: #F3E5D0;
+
+}

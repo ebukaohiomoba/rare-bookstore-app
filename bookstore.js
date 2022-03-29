@@ -202,7 +202,6 @@ let books = [
   function addRow() {
     if (!validate()) {
       const title = document.getElementById("title").value;
-      console.log(title);
       const author = document.getElementById("author").value;
       const genre = document.getElementById("genre").value;
       const country = document.getElementById("country").value;
@@ -265,11 +264,9 @@ let books = [
         document.getElementById("genre").value = this.cells[2].innerHTML;
         document.getElementById("country").value = this.cells[3].innerHTML;
         document.getElementById("language").value = this.cells[4].innerHTML;
-        document.getElementById("length").value = this.cells[5].innerHTML;
-        document.getElementById("year").value = this.cells[6].innerHTML;
-        document.getElementById("isbn").value = this.cells[7].innerHTML;
-        document.getElementById("condition").value = this.cells[8].innerHTML;
-
+        document.getElementById("year").value = this.cells[5].innerHTML;
+        document.getElementById("isbn").value = this.cells[6].innerHTML;
+        document.getElementById("condition").value = this.cells[7].innerHTML;
       };
   
       document.getElementById("my-button").style.display = "none";
@@ -281,19 +278,19 @@ let books = [
     console.log(rIndex);
     console.log(books);
   
-    const title = document.getElementById("title").value;
-    const author = document.getElementById("author").value;
-    const genre = document.getElementById("genre").value;
-    const country = document.getElementById("country").value;
-    const language = document.getElementById("language").value;
-    const length = document.getElementById("length").value;
-    const year = document.getElementById("year").value;
-    const isbn = document.getElementById("isbn").value;
-    const condition = document.getElementById("condition").value;
+      const title = document.getElementById("title").value;
+      const author = document.getElementById("author").value;
+      const genre = document.getElementById("genre").value;
+      const country = document.getElementById("country").value;
+      const language = document.getElementById("language").value;
+      const length = document.getElementById("length").value;
+      const year = document.getElementById("year").value;
+      const isbn = document.getElementById("isbn").value;
+      const condition = document.getElementById("condition").value;
   
     for (var i = 0; i < books.length; i++) {
       if (i === rIndex - 1) {
-        books[i].name = title;
+        books[i].title = title;
         books[i].author = author;
         books[i].genre = genre;
         books[i].country = country;
@@ -310,6 +307,7 @@ let books = [
     document.getElementById("my-button").style.display = "block";
     document.getElementById("btnSave").style.display = "none";
   
+    console.log(title, author, genre, country, language, length, year, isbn, condition);
     analyzebooks(books);
   });
   

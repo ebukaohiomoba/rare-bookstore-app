@@ -11,14 +11,14 @@ let employee = [
    "idnumber": "78300272",
    "storenumber": "1",
    "employeetype": "Manager",
-   "picture": "https://www.minneapolisheadshots.com/gallery/main/blackandwhitebusinessportrait.jpg",
+   "picture": "https://organizations.dgsom.ucla.edu/snma/files/view/snma-board-pics-2021-2022/Joy_SNMA_Board_Pic.jpg",
   },
   {
    "name": "Gracie Christopher",
    "idnumber": "67892373",
    "storenumber": "5",
    "employeetype": "Manager",
-   "picture": "https://www.minneapolisheadshots.com/gallery/main/blackandwhitebusinessportrait.jpg",
+   "picture": "https://www.wto.org/images/img_index/photos/ngozi_official_photo_lg.jpg",
 
   },
   {
@@ -26,50 +26,40 @@ let employee = [
    "idnumber": "89897236",
    "storenumber": "10",
    "employeetype": "Employee",
-   "picture": "https://www.minneapolisheadshots.com/gallery/main/blackandwhitebusinessportrait.jpg",
+   "picture": "https://hips.hearstapps.com/hmg-prod/images/toni-morrison-news-photo-533137304-1551212596.jpg",
 
   },
   {
    "name": "Matthew Lopez",
    "idnumber": "78204892",
    "storenumber": "4",
-   "employeetype": "Employee"
+   "employeetype": "Employee",
+   "picture": "https://i.guim.co.uk/img/media/6543826cf1cbd7ade9c31dc946f49ee0538547f7/677_481_3223_1934/master/3223.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=8bdb964abc751e0a08faa9bedbb52083",
+
   },
   {
    "name": "David Goliath",
    "idnumber": "72909021",
    "storenumber": "7",
-   "employeetype": "Manager"
-  },
-  {
-   "name": "Daisy Smith",
-   "idnumber": "78902398",
-   "storenumber": "3",
-   "employeetype": "Employee"
+   "employeetype": "Manager",
+   "picture": "https://cdn.pixabay.com/photo/2019/10/18/23/57/thinking-man-4560322_1280.png",
+
   },
   {
    "name": "Chigozie Obioma",
    "idnumber": "98922356",
    "storenumber": "9",
-   "employeetype": "Manager"
+   "employeetype": "Manager",
+   "picture": "https://uploads.concordia.net/2017/08/25100135/Olusegun-Obasanjo.jpg",
+
   },
   {
    "name": "Dawn Summners",
    "idnumber": "87923012",
    "storenumber": "5",
-   "employeetype": "Employee"
-  },
-  {
-   "name": "Carrie Washington",
-   "idnumber": "82225347",
-   "storenumber": "6",
-   "employeetype": "Employee"
-  },
-  {
-   "name": "Helen Johnson",
-   "idnumber": "92368210",
-   "storenumber": "8",
-   "employeetype": "Employee"
+   "employeetype": "Employee",
+   "picture": "https://www.pngkey.com/png/detail/7-74978_thinking-man-png-image-icon-thinking-person-png.png",
+
   },
 ]
      

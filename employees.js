@@ -26,7 +26,7 @@ let employee = [
    "idnumber": "89897236",
    "storenumber": "10",
    "employeetype": "Employee",
-   "picture": "https://hips.hearstapps.com/hmg-prod/images/toni-morrison-news-photo-533137304-1551212596.jpg",
+   "picture": "https://media.vanityfair.com/photos/5f074915e132b56358d73f5f/3:2/w_1998,h_1332,c_limit/VF0720_Viola_Davis_Tout.jpg",
 
   },
   {

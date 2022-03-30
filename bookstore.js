@@ -8,8 +8,9 @@ let books = [
       "length": "209",
       "year": "1958",
       "isbn": "978-7-1735-1972-0",
-      "condition": "Fair"
-      
+      "condition": "Fair",
+      "inventory": "10"
+
      },
      {
       "title": "Fairy tales",
@@ -20,7 +21,9 @@ let books = [
       "length": "784",
       "year": "1836",
       "isbn": "978-7-1735-1972-1",
-      "condition": "Fair"
+      "condition": "Fair",
+      "inventory": "5"
+
      },
      {
       "title": "The Divine Comedy",
@@ -31,7 +34,9 @@ let books = [
       "length": "928",
       "year": "1315",
       "isbn": "0-7067-4636-8",
-      "condition": "Poor"
+      "condition": "Poor",
+      "inventory": "2"
+
      },
      {
       "title": "The Epic Of Gilgamesh",
@@ -42,7 +47,9 @@ let books = [
       "length": "160",
       "year": 1700,
       "isbn": "0-3933-0529-5",
-      "condition": "Good"
+      "condition": "Good",
+      "inventory": "3"
+
      },
      {
       "title": "The Book Of Job",
@@ -53,7 +60,9 @@ let books = [
       "length": "176",
       "year": 600,
       "isbn": "0-6845-1134-7",
-      "condition": "Great"
+      "condition": "Great",
+      "inventory": "20"
+
      },
      {
       "title": "The Magic Mountain",
@@ -64,7 +73,9 @@ let books = [
       "length": "720",
       "year": "1924",
       "isbn": "0-3283-5716-2",
-      "condition": "Good"
+      "condition": "Good",
+      "inventory": "9"
+
      },
      {
       "title": "Moby Dick",
@@ -75,7 +86,9 @@ let books = [
       "length": "378",
       "year": "1851",
       "isbn": "0-8091-0004-5",
-      "condition": "Great"
+      "condition": "Great",
+      "inventory": "13"
+
      },
      {
       "title": "Essays",
@@ -86,7 +99,9 @@ let books = [
       "length": "404",
       "year": "1595",
       "isbn": "0-6872-0495-X",
-      "condition": "Poor"
+      "condition": "Poor",
+      "inventory": "11"
+
      },
      {
       "title": "History",
@@ -97,7 +112,9 @@ let books = [
       "length": "600",
       "year": "1974",
       "isbn": "978-8-4517-5443-7",
-      "condition": "Great"
+      "condition": "Great",
+      "inventory": "16"
+
      },
      {
       "title": "Beloved",
@@ -108,7 +125,9 @@ let books = [
       "length": "321",
       "year": "1987",
       "isbn": "978-1-1177-7373-5",
-      "condition": "Good"
+      "condition": "Good",
+      "inventory": "9"
+
      },
      {
       "title": "The Tale of Genji",
@@ -119,7 +138,9 @@ let books = [
       "length": "1360",
       "year": "1006",
       "isbn": "978-6-9789-4583-3",
-      "condition": "Fair"
+      "condition": "Fair",
+      "inventory": "24"
+
      },
      {
       "title": "The Man Without Qualities",
@@ -130,7 +151,9 @@ let books = [
       "length": "365",
       "year": "1931",
       "isbn": "0-9124-2177-0",
-      "condition": "Poor"
+      "condition": "Poor",
+      "inventory": "9"
+
      },
      {
       "title": "Heart of Darkness",
@@ -141,7 +164,9 @@ let books = [
       "length": "317",
       "year": "1955",
       "isbn": "978-0-6179-6131-4",
-      "condition": "Poor"
+      "condition": "Poor",
+      "inventory": "0"
+
      },
      {
       "title": "Nineteen Eighty-Four",
@@ -152,7 +177,9 @@ let books = [
       "length": "272",
       "year": "1949",
       "isbn": "978-1-1960-6341-3",
-      "condition": "Great"
+      "condition": "Great",
+      "inventory": "2"
+
      },
   ]
 
@@ -166,6 +193,8 @@ let books = [
   const year = document.getElementById("year").value;
   const isbn = document.getElementById("isbn").value;
   const condition = document.getElementById("condition").value;
+  const inventory = document.getElementById("inventory").value;
+
   
   analyzebooks(books);
   
@@ -187,6 +216,8 @@ let books = [
                       <td>${data[i].year}</td>
                       <td>${data[i].isbn}</td>
                       <td>${data[i].condition}</td>
+                      <td>${data[i].inventory}</td>
+
                       <td><button id="btnDelete" >Delete</button>
                          <button id="btnEdit" onclick="editRow()">Edit</button>
                       </td>
@@ -210,7 +241,9 @@ let books = [
       const year = document.getElementById("year").value;
       const isbn = document.getElementById("isbn").value;
       const condition = document.getElementById("condition").value;
-      console.log(title, author, genre, country, language, length, year, isbn, condition);
+      const inventory = document.getElementById("inventory").value;
+
+      console.log(title, author, genre, country, language, length, year, isbn, condition, inventory);
   
       const newBook = {
         title: title,
@@ -221,7 +254,8 @@ let books = [
         length: length,
         year: year,
         isbn: isbn,
-        condition: condition
+        condition: condition,
+        inventory: inventory
       };
   
       books.push(newBook);
@@ -264,9 +298,12 @@ let books = [
         document.getElementById("genre").value = this.cells[2].innerHTML;
         document.getElementById("country").value = this.cells[3].innerHTML;
         document.getElementById("language").value = this.cells[4].innerHTML;
-        document.getElementById("year").value = this.cells[5].innerHTML;
-        document.getElementById("isbn").value = this.cells[6].innerHTML;
-        document.getElementById("condition").value = this.cells[7].innerHTML;
+        document.getElementById("length").value = this.cells[5].innerHTML;
+        document.getElementById("year").value = this.cells[6].innerHTML;
+        document.getElementById("isbn").value = this.cells[7].innerHTML;
+        document.getElementById("condition").value = this.cells[8].innerHTML;
+        document.getElementById("inventory").value = this.cells[9].innerHTML;
+
       };
   
       document.getElementById("my-button").style.display = "none";
@@ -287,6 +324,8 @@ let books = [
       const year = document.getElementById("year").value;
       const isbn = document.getElementById("isbn").value;
       const condition = document.getElementById("condition").value;
+      const inventory = document.getElementById("inventory").value;
+
   
     for (var i = 0; i < books.length; i++) {
       if (i === rIndex - 1) {
@@ -299,6 +338,8 @@ let books = [
         books[i].year = year;
         books[i].isbn = isbn;
         books[i].condition = condition;
+        books[i].inventory = inventory;
+
 
       }
     }
@@ -307,7 +348,7 @@ let books = [
     document.getElementById("my-button").style.display = "block";
     document.getElementById("btnSave").style.display = "none";
   
-    console.log(title, author, genre, country, language, length, year, isbn, condition);
+    console.log(title, author, genre, country, language, length, year, isbn, condition, inventory);
     analyzebooks(books);
   });
   
@@ -336,6 +377,8 @@ let books = [
     const year = document.getElementById("year").value;
     const isbn = document.getElementById("isbn").value;
     const condition = document.getElementById("condition").value;
+    const inventory = document.getElementById("inventory").value;
+
   
     if (title === "" && author === "" && genre === "" && country === "" && language === "" && length === "" && year === "" && isbn === ""&& condition === "") {
       alert("You Left all the inputs empty");
@@ -362,6 +405,9 @@ let books = [
       alert("Please provide the isbn");
       isEmpty = true;
     } else if (condition === "") {
+      alert("Please provide the condition");
+      isEmpty = true;
+    } else if (inventory === "") {
       alert("Please provide the condition");
       isEmpty = true;
     }

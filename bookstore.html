@@ -42,18 +42,20 @@
           <input type="text" placeholder="author" name="author" id="author" required>
           <input type="text" placeholder="genre" name="genre" id="genre" required>
           <input type="text" placeholder="country" name="country" id="country" required>
-          <input type="text" placeholder="language" name="length" id="language" required>
-          <input type="number" placeholder="author" name="length" id="length" required>
-          <input type="text" placeholder="author" name="author" id="author" required>
-          <input type="number" placeholder="year" name="year" id="year" required>
+          <input type="text" placeholder="language" name="language" id="language" required>
+          <input type="text" placeholder="length" name="length" id="length" required>
+          <input type="text" placeholder="year" name="year" id="year" required>
           <input type="text" placeholder="isbn" name="isbn" id="isbn" required>
-              <select name="genre" id="condition" style="font-size: 20px; text-align: center;">
+
+              <select name="condition" id="condition" style="font-size: 20px; text-align: center;">
                   <option value="Abysmal">Abysmal</option>
                   <option value="Poor">Poor</option>
                   <option value="Fair">Fair</option>
                   <option value="Good">Good</option>
                   <option value="Great">Great</option>
               </select>
+            <input type="text" placeholder="inventory" name="inventory" id="inventory" required>
+
           </div>
           <button id="my-button" onclick="addRow()"  value="Add">Add</button>
           <button id="btnSave">Save</button>
@@ -79,6 +81,8 @@
             <th>Year</th>
             <th>ISBN</th>
             <th>Condition</th>
+            <th>Inventory</th>
+
             <th></th>
 
 

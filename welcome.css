@@ -1,0 +1,136 @@
+html { 
+    background: url(images/wave-haikei-4.svg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+body{
+    font-family: 'Archivo', sans-serif;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.child-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.home-main-text{
+    margin-top: 350px;
+    width: 100%;
+    white-space: pre;
+    font-size: 60px;
+    margin-left: 50px;
+}
+.main-text{
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.button-box{
+    margin-top: -100px;
+    width: 100%;
+    margin-left:200px;
+    
+}
+
+#shutterstock{
+    margin-top: -400px;
+    margin-left: 500px;
+    width: 97%;
+    max-height: 100vw;
+    height: auto;
+
+}
+
+.button-5 {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #de6a5b;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+    top: 150px;
+  }
+  
+  .button-5:hover,
+  .button-5:focus {
+    background-color: #fb8332;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  }
+  
+  .button-5:hover {
+    transform: translateY(-1px);
+  }
+  
+  .button-5:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+  }
+
+
+  nav {
+    height: 70px;
+    width: 100%;
+  }
+  
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  
+  nav ul li a {
+    color: white;
+    font-size: 30px;
+    padding: 7px 13px;
+    border-radius: 7px;
+    text-decoration: none;
+  }
+  
+  a.active,
+  a:hover {
+    background: turquoise;
+    transition: .5s;
+  }
+  
+  .logo {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -10px;
+    left: 5px;
+  }

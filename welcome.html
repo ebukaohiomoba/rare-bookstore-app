@@ -4,39 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="welcome.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
     <title>Rare Books</title>
 </head>
 <body >
     <header>
-    <div class="navigation-bar">
-    <div class="navigation-container">
-    <div class="logo">
-    <img src="images/R-3.png" class="logo">
-    </div>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="bookstore.html">Books</a></li>
-        <li><a href="employees.html">Employees</a></li>
-      </ul>
-    </div>
-    </div>
+        <nav>
+            <a href="welcome.html">
+              <img src="images/R-3.png" alt="logo" class="logo" />
+            </a>
+            <ul>
+              <li> <a href="welcome.html">Home</a></li>
+              <li> <a href="bookstore.html">Books</a></li>
+              <li> <a href="employees.html">Employees</a></li>
+            </ul>
+          </nav>
     </header>
     <div class = "main-container">
         <div class = "child-container">
         <div class = "main-text" >
-        <div><h1 class="home-main-text">Welcome to <div>Rare Books</div></h1></div>
-        <button class="btn-signin" onclick="window.location.href='bookstore.html'">Books</button>
-        <button class="btn-signin" onclick="window.location.href='employees.html'">Employees</button>
-
+        <div><h1 class="home-main-text">Welcome to Rare Books</h1></div>
+        <div class="button-box">
+        <button class="button-5" onclick="window.location.href='bookstore.html'">Books</button>
+        <button class="button-5" onclick="window.location.href='employees.html'">Employees</button>
+        </div>
         </div>
         <div class="picture-container">
-            <img src="images/shutterstock_1414508999-2.png">
+            <img src="images/shutterstock_1414508999-2.png" id="shutterstock">
         </div>
     </div>
 </body>
-</html>
+</html>   
+
+
+
+

@@ -4,98 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="employees.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <script src="employees.js" defer></script>
     <title>Employees</title>
 </head>
-<body >
+<body>
   <header>
-    <div class="navigation-bar">
-    <h1 class="bookstore-heading">Employees</h1>
-    <div class="navigation-container">
-          <div class="logo">
-          <img src="images/R-3.png" class="logo">
-    </div>
-    <div class="bookstore-header">
-      <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="bookstore.html">Books</a></li>
-          <li><a href="employees.html">Employees</a></li>
+    <nav id="navbar">
+        <a href="welcome.html">
+          <img src="images/R-3.png" alt="logo" class="logo" />
+        </a>
+        <ul>
+          <li> <a href="welcome.html">Home</a></li>
+          <li> <a href="bookstore.html">Books</a></li>
+          <li> <a href="employees.html">Employees</a></li>
         </ul>
-      </div>
-
-      </div>
-
-      </div>
-    </header>
-     <!-- Trigger/Open The Modal -->
-<button class="btn-common" id="myBtn">Add New Employee</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <form class="modal-content" onsubmit="updateBook(event);">
+      </nav>
+</header>
+<div class="content">
+<div class="wrapper">
+    <div class="sidebar">
+    <form class="modal-content">
       <div class="container">
-          <h1>Update the Book</h1>
-          <p>Please fill in this form to update the book.</p>
-          <hr>
-          <input type="hidden" name="hfBookID" id="hfBookID">
+          <h1>Our Employees</h1>
+          <input type="text" placeholder="Enter Book Title" name="name" id="name" required>
+          <input type="number" placeholder="ID Number" name="idnumber" id="idnumber" required>
+          <input type="number" placeholder="store number" name="storenumber" id="storenumber" required>
+          <input type="text" placeholder="imageurl" name="imageurl" id="imageurl" required>
 
-          <label for="title"><b>Title</b></label>
-          <input type="text" placeholder="Enter Book Title" name="title" id="tbUpTitle" required>
-
-          <label for="author"><b>Author</b></label>
-          <input type="text" placeholder="Enter Author's Name" name="author" id="tbUpAuthor" required>
-
-          <div><label for="ddlUpGenre"><b>Choose a Genre</b></label>
-              <select name="genre" id="ddlUpGenre">
-                  <option value="Economics">Economics</option>
-                  <option value="History">History</option>
-                  <option value="Math">Math</option>
-                  <option value="Science">Science</option>
+              <select name="condition" id="employeetype" style="font-size: 20px; text-align: center;">
+                  <option value="Employee">Employee</option>
+                  <option value="Manager">Manager</option>
               </select>
           </div>
+          <button id="my-button" onclick="addRow()"  value="Add">Add</button>
+          <button id="btnSave">Save</button>
 
-          <label for="publisher"><b>Publisher</b></label>
-          <input type="text" placeholder="Enter Publisher" name="publisher" id="tbUpPublisher" required>
-
-          <label for="length"><b>Length</b></label>
-          <input type="number" placeholder="Enter Length" name="length" id="tbUpLength" required>
-
-          <div class="clearfix">
-              <!--close the modal when the cancel button is clicked-->
-              <button type="button" onclick="document.getElementById('mdlFormUpdate').style.display='none'"
-                  class="cancelbtn">Cancel</button>
-              <button type="submit" class="btn-signin">Update</button>
-          </div>
-      </div>
   </form>
   </div>
 
+
+<div class="main">
+  <div id="employee-cards">
+    <div>
+
+    </div>
+    
+ 
+
+
 </div>
-    <div class="employee-table-functions">
-        <table id="myemployeetable">
-            <tr>
-              <th>Title</th>
-              <th>Author</th>
-              <th>Genre</th>
-              <th>Country</th>
-              <th>Language</th>
-              <th>Length</th>
-              <th>Year</th>
-              <th>ISBN</th>
-              <th>Condition</th>
-            </tr>
-            <tr>
-              
-            </tr>
-          </table>
-                      
-    </body>
+
+
+
+</div>  
+</div>
+</div>      
+</body>
 </html>

@@ -6,32 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="login.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <script src="scripts.js" defer></script>
     <title>Log In</title>
   </head>
   <body>
-    <div class="login">
-    <header>
-    <h1 class= "login-text">Log In</h1>
-    <h2>Please enter your email and password</h2>
-    </header>
-    <div class="signupcontainer">
-    <form id="sign-in-form">
-      <label for="email"><b><p>Email</p></b></label>
-        <input type="email" size= 40 placeholder="Please enter your email here" name="username"  id="username" required>
-        <label for="password"><b><p>Password</p></b></label>
-        <input type="password" placeholder="" id= "password" name="password" required>
-        <br>
-        <input class="button-5" type="reset" value="Sign In" onclick="doLogin();"></input>
-        <br>
-        <button class="button-5" type="submit" onclick="forgotPasswordAlert()">Forgot Password</button>
-
+    <form action="" class="decor">
+      <div class="form-left-decoration"></div>
+      <div class="form-right-decoration"></div>
+      <div class="circle"></div>
+      <div class="form-inner">
+        <h1>Log In</h1>
+        <input type="email" placeholder="Email" id="username" name="username">
+        <input type="password" placeholder="Password" id="password" name="password">
+        <button class="button-5" type="submit" href="/">Submit</button>
+      </div>
     </form>
-  </div>
-
-  </div>
-
   </body>
 </html>

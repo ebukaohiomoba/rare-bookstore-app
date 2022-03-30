@@ -42,10 +42,10 @@ Users should be able to:
 ### Built with
 
 - Javascript ES6
-- Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - CRUD operations
+- Semantic HTML5 markup
 
 
 

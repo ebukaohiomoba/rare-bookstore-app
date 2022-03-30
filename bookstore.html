@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="styles.css" />
+      <link rel="stylesheet" type="text/css" href="bookstore.css" />
       <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
@@ -13,31 +13,25 @@
       </head>
 <body>
   <header>
-    <div class="navigation-bar">
-    <h1 class="bookstore-heading">Books</h1>
-    <div class="navigation-container">
-          <div class="logo">
-          <img src="images/R-3.png" class="logo">
-    </div>
-    <div class="bookstore-header">
-      <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="bookstore.html">Books</a></li>
-          <li><a href="employees.html">Employees</a></li>
+    <nav id="navbar">
+        <a href="welcome.html">
+          <img src="images/R-3.png" alt="logo" class="logo" />
+        </a>
+        <ul>
+          <li> <a href="welcome.html">Home</a></li>
+          <li> <a href="bookstore.html">Books</a></li>
+          <li> <a href="employees.html">Employees</a></li>
         </ul>
-      </div>
-
-      </div>
-
-      </div>
-    </header>
-    <div class="table-functions">
- 
+      </nav>
+</header>
+<div class="content">
+<div class="wrapper">
+    <div class="sidebar">
     <form class="modal-content">
       <div class="container">
-          <h1>Update the Book</h1>
-          <p>Please fill in this form to update the book.</p>
-          <hr>
+          <h1>Our Books</h1>
+          <p>Add and Update Inventory</p>
+          <input type="text" id="myInput" onkeyup="searchBooks()" placeholder="Search by Title">
           <input type="text" placeholder="Enter Book Title" name="title" id="title" required>
           <input type="text" placeholder="author" name="author" id="author" required>
           <input type="text" placeholder="genre" name="genre" id="genre" required>
@@ -63,11 +57,8 @@
   </form>
   </div>
 
-</div>
-    <input type="text" id="myInput" onkeyup="searchBooks()" placeholder="Search by Title">
-</div>
-<div id="table-container">
-  
+
+<div class="main">
   <div id="table">
     <table id="my-table">
        <thead> 
@@ -97,12 +88,12 @@
  
 
 
-
+</div>
 
 
 
 </div>  
-    
-      
+</div>
+</div>      
 </body>
 </html>

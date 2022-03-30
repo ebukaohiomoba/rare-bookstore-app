@@ -218,7 +218,7 @@ let books = [
                       <td>${data[i].condition}</td>
                       <td>${data[i].inventory}</td>
 
-                      <td>
+                      <td><button id="btnDelete" >Delete</button>
                          <button id="btnEdit" onclick="editRow()">Edit</button>
                       </td>
                    </tr> `;

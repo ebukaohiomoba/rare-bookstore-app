@@ -3,7 +3,7 @@ function doLogin () {
     let tbPassword = document.getElementById("password").value;
     console.log(tbUserName, tbPassword);
     if (tbUserName=='admin@admin.com'&& tbPassword=='123456') {
-      window.location.href="login.html";
+      window.location.href="welcome.html";
     } else {
       return "Wrong Password";
   }

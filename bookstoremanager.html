@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="bookstore.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+      <script src="bookstore.js" defer></script>
+      <title>BookStore</title>
+      </head>
+<body>
+  <header>
+    <nav id="navbar">
+        <a href="managerwelcome.html">
+          <img src="images/R-3.png" alt="logo" class="logo" />
+        </a>
+        <ul>
+          <li> <a href="managerwelcome.html">Home</a></li>
+            <li> <a href="bookstoremanager.html">Books</a></li>
+            <li> <a href="manager.html">Employees</a></li>
+        </ul>
+      </nav>
+</header>
+<div class="content">
+<div class="wrapper">
+    <div class="sidebar">
+    <form class="modal-content">
+      <div class="container">
+          <h1>Our Books</h1>
+          <p>Add and Update Inventory</p>
+          <input type="text" id="myInput" onkeyup="searchBooks()" placeholder="Search by Title">
+          <input type="text" placeholder="Enter Book Title" name="title" id="title" required>
+          <input type="text" placeholder="author" name="author" id="author" required>
+          <input type="text" placeholder="genre" name="genre" id="genre" required>
+          <input type="text" placeholder="country" name="country" id="country" required>
+          <input type="text" placeholder="language" name="language" id="language" required>
+          <input type="text" placeholder="length" name="length" id="length" required>
+          <input type="text" placeholder="year" name="year" id="year" required>
+          <input type="text" placeholder="isbn" name="isbn" id="isbn" required>
+
+              <select name="condition" id="condition" style="font-size: 20px; text-align: center;">
+                  <option value="Abysmal">Abysmal</option>
+                  <option value="Poor">Poor</option>
+                  <option value="Fair">Fair</option>
+                  <option value="Good">Good</option>
+                  <option value="Great">Great</option>
+              </select>
+            <input type="text" placeholder="inventory" name="inventory" id="inventory" required>
+
+          </div>
+          <button id="my-button" onclick="addRow()"  value="Add">Add</button>
+          <button id="btnSave">Save</button>
+
+  </form>
+  </div>
+
+
+<div class="main">
+  <div id="table">
+    <table id="my-table">
+       <thead> 
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Country</th>
+            <th>Language</th>
+            <th>Length</th>
+            <th>Year</th>
+            <th>ISBN</th>
+            <th>Condition</th>
+            <th>Inventory</th>
+
+            <th></th>
+
+
+
+
+        </tr> 
+        </thead>
+        <tbody id="my-body">
+    
+         </tbody>
+         </table>
+ 
+
+
+</div>
+
+
+
+</div>  
+</div>
+</div>      
+</body>
+</html>

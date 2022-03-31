@@ -27,6 +27,11 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
+### Log In
+
+- Manager - Email: manager@rarebooks.com; Password: 12345
+- Employee - Email: employee@rarebooks.com; Password: 67890
+
 ### Screenshot
 
 ![](./.jpg)
@@ -79,7 +84,6 @@ My next step is to transform this project into a React app. The objectives would
 
 ## Author
 
-- Website - [Ebuka Ohiomoba](https://www.my-site.com)
 - Twitter - [@eohiomoba](https://www.twitter.com/eohiomoba)
 
 

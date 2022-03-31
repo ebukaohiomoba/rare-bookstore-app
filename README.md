@@ -22,10 +22,10 @@ This is a solution a business, Rare Books, that needed a way of viewing their in
 
 ### The challenge
 
-Users should be able to:
+Managers should be able to:
 
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
+- View the book list, add new book, edit preexisting books, and delete book
+- View grid of employees, add new employee, and delete employee
 
 ### Log In
 
@@ -42,8 +42,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ebukaohiomoba/rare-bookstore-app)
-- Live Site URL: [Add live site URL here](https://ebukaohiomoba.github.io/rare-bookstore-app/)
+- Solution URL: [My solution](https://github.com/ebukaohiomoba/rare-bookstore-app)
+- Live Site URL: [My live site](https://ebukaohiomoba.github.io/rare-bookstore-app/)
 
 ## My process
 

@@ -34,8 +34,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./.jpg)
-
+![alt text](images/landingpage.png "Screenshot of landing page")
+![alt text](images/login.png "Log In screen")
+![alt text](images/managerwelcome.png "Manager welcome screen")
+![alt text](images/books.png "Manager book screen")
+![alt text](images/employees.png "Manager employee screen")
 
 ### Links
 

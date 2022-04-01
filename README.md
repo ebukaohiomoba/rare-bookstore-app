@@ -1,6 +1,6 @@
 # Rare Books - Inventory Solution
 
-This is a solution a business, Rare Books, that needed a way of viewing their inventory and tracking their inventory. 
+Overview: A business, Rare Books, needs a way of viewing and tracking their inventory. This needs to be segmented by permission and role. Managers should have access to all functions including adding, editing, and deleting books and employees. Other employees should be able to edit books and add, but not delete. They should be able to only view other employees. 
 
 ## Table of contents
 
@@ -59,21 +59,14 @@ Managers should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned and applied CRUD operations. It was also a great opportunity to practice CSS Grid and improve my knowledge of styling. 
 
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+```CSS Grid
+.card-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    }
 ```
 
 

@@ -22,8 +22,9 @@ html {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     text-align: center;
-    display: grid;
-  }
+    }
+  
+
   img{
       max-height: 100%;
       width:100%;
@@ -41,9 +42,11 @@ html {
     width: 80%;
     height: auto;
     min-height: 1000px;
-    display: flex;
-    flex-direction: column;
-  }
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+      }
   
   .main,
   .sidebar {

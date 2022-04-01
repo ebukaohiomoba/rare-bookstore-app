@@ -42,11 +42,18 @@ html {
     width: 80%;
     height: auto;
     min-height: 1000px;
+  }
+
+  .card-container{
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #2196F3;
     padding: 10px;
-      }
+    }
+
+    p > img{
+      width: 250px;
+      height: 200px;
+    }
   
   .main,
   .sidebar {

@@ -80,7 +80,7 @@ let employee = [
                         <p class="store-text">Store Number: ${employee[i].storenumber}</p>
                         <p class="employeetype-text">Employee Type: ${employee[i].employeetype}</p>
                         <p><img src="${employee[i].picture}"</p>
-                        <p><button id="btnDelete" >Delete</button>
+                        <p><button id="btnDelete" class="delete-button">Delete</button>
                            
                         </p>
                         </div>

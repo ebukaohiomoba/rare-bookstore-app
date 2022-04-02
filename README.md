@@ -38,7 +38,7 @@ Managers should be able to:
 ![alt text](images/login.png "Log In screen")
 ![alt text](images/managerwelcome.png "Manager welcome screen")
 ![alt text](images/books.png "Manager book screen")
-![alt text](images/employees.png "Manager employee screen")
+![alt text](images/employeetable.png "Manager employee screen")
 
 ### Links
 
